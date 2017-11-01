@@ -28,6 +28,24 @@
         img{
             padding: 10px;
         }
+
+        
+
+        @-webkit-keyframes flash-image {
+            0% {opacity: .3}
+            100% {opacity: 1}
+        }
+
+        @keyframes flash-image{
+            0% { opacity: .3}
+            100% {opacity: 1}
+        }
+
+        .flash:hover{
+            opacity: 1;
+            -webkit-animation: flash-image 1s;
+            animation: flash-image 1s;
+        }
     </style>
 </head>
 <body>
@@ -35,10 +53,10 @@
     <h1>Baraka Mahili's Favorite Animal</h1>
     <div class="wraper">
         <div>
-            <center><img src="horse-2903159_640.jpg" alt="Animal 1"></center>
+            <center><img class="flash" src="horse-2903159_640.jpg" alt="Animal 1"></center>
         </div>
         <div>
-            <center><img src="horses-2427513_640.jpg" alt="Animal 1"></center>
+            <center><img class="flash" src="horses-2427513_640.jpg" alt="Animal 1"></center>
         </div>
     </div>
     
