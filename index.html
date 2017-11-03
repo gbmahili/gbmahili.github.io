@@ -3,62 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Favorite Animals</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Baraka Mahili - About</title>
 
     <style>
 
-        body{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        .wraper{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            column-gap: 2em;
-            align-items: center;
-            
-        }
-        div{
-            padding: 10px;
-            border: 1px solid #ccc;
-            
-        }
-
-        img{
-            padding: 10px;
-        }
-
-        
-
-        @-webkit-keyframes flash-image {
-            0% {opacity: .3}
-            100% {opacity: 1}
-        }
-
-        @keyframes flash-image{
-            0% { opacity: .3}
-            100% {opacity: 1}
-        }
-
-        .flash:hover{
-            opacity: 1;
-            -webkit-animation: flash-image 1s;
-            animation: flash-image 1s;
-        }
     </style>
 </head>
 <body>
 
-    <h1>Baraka Mahili's Favorite Animal</h1>
-    <div class="wraper">
-        <div>
-            <center><img class="flash" src="horse-2903159_640.jpg" alt="Animal 1"></center>
-        </div>
-        <div>
-            <center><img class="flash" src="horses-2427513_640.jpg" alt="Animal 1"></center>
-        </div>
-    </div>
+    <!-- Header -->
     
+    <div id="header">
+
+        <div class="nav">
+            <div id="logo"><h1><a href="index.html">Baraka Mahili</a></h1></div>
+            <div class="active"><a href="index.html">About</a> <span>|</span></div>
+            <div><a href="portfolio.html">Portfolio</a> <span>|</span></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div id="main-content">
+
+        <div id="content-on-me">
+            
+            <div id="about">
+                <h1>About Me</h1> 
+                <hr>               
+                <img src="./assets/images/Baraka-In-Windsor-Canada-Flag.png" alt="Baraka in Canada" width="200" height="150">
+                <span>
+                    I was born and raised in the Democratic Republic of Congo. My family is interested in technology. So from an earlier age, I was introduced to electronic devices.<br>
+                    In highschool, I specialized in <b>Machine Outli</b>, a field that introduces you to designing a tool such as a <a href="https://en.wikipedia.org/wiki/Wrench" target="_blank">wrench</a> and other tools. <br>
+                    My interest in Web development really started towards the end of my high school education. We used to see university students on our campus use computers and we weren't allow to even touch them.
+                </span><br><br>
+                <p>
+                    I then went to Kenya where I joined the Electronic deparment. There, I was interested in web development since once of my friend used to inspect pages, then changed them and added his name in the Copyright. I thought that was so cool.
+                    Since then, I have been interested in technology, especially web development.
+                </p> <br>
+                <a href="portfolio.html"><p id="go-to-portfolio">Check Out My Work</p></a>
+            </div>
+
+            <div id="social-media">
+                <h2>Connect with Me</h2>
+                <hr>
+                <div id="social-media-icons">                        
+                        <div><a href="https://www.linkedin.com/in/baraka-mahili-13971564/" target="_blank"><img src="./assets/images/linkedin-icon.png" alt="Linkedin Icon"></a></div>
+                        <div><a href="https://github.com/gbmahili" target="_blank"><img src="./assets/images/github-icon.png" alt="GitHub Icon"></a></div>
+                        <div><a href="https://stackoverflow.com/users/5051309/baraka-mahili" target="_blank"><img src="./assets/images/StackOverflow-icon.png" alt="StackOverflow-icon"></a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div id="footer">
+        Copyright 2017 &copy; Baraka Mahili
+    </div>
+      
 </body>
 </html>
