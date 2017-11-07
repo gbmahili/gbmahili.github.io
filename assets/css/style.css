@@ -20,8 +20,7 @@ body {
     background: #4AAAA5;
     padding: 1.5em;
     font-size: 25px;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 #logo a {
     color: white;
@@ -76,10 +75,6 @@ body {
     text-decoration: none;
 }
 
-#about > img{
-    border-radius: 20px 0;
-}
-
 #social-media{
     background-color: #FAFAFA; 
     height: 200px;
@@ -112,6 +107,7 @@ body {
 #about > img {
     float: left;
     padding-right: 20px;
+    border-radius: 20px 0;
 }
 
 hr{
@@ -242,4 +238,171 @@ h1, h2{
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4AAAA5;
     font-weight: bold;
+}
+
+/* Media Queries */
+
+/* 1. When the screen has a maximum width of 980px */
+
+@media only screen and (max-width : 980px) {
+
+    /* Navigation and About Page */
+
+    .nav{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+    }
+    #logo{
+        background: #4AAAA5;
+        padding: 20px 0;
+        font-size: 18px;
+        font-weight: bold;    
+    }
+
+    .nav, #main-content{
+        margin: 0 auto;
+        width: 800px;
+    }
+
+    .nav div span{
+        margin-left: 15px;
+    }
+
+    #about{
+        width: 400px;
+    }
+
+    #social-media{
+        width: 250px;
+    }
+
+    #about, #social-media{
+        padding: 30px;
+    }
+
+    #about > img {
+        float: unset;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    /* Portfolio Page */
+
+    #my-work{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        grid-gap: 0;
+    }
+   
+}
+
+
+/* 2. When the screen has a maximum width of 768px */
+@media screen and (max-width : 768px) {
+
+    body{
+        width: 768px;
+    }
+
+    .nav{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    #main-content{
+        width: 100%;
+        margin: 20px;
+    }
+
+    #content-on-me{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 35px;
+        padding-bottom: 200px;
+        margin: 10px;
+        width: 100%;        
+    }
+
+    #about, #social-media{
+        width: 80%;
+        margin: 30px;
+    } 
+
+    #about > img {
+        float: left;
+        border-radius: 0;
+        width: 280px;
+        height: 210px;
+    } 
+
+    /* Portfolio Page */
+
+    #my-work{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-auto-rows: minmax(300px, auto);
+        grid-gap: 2em;
+    }
+    
+}
+
+
+/* 3. When the screen has a maximum width of 640px */
+@media screen and (max-width : 640px) {
+
+    #content-on-me{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 35px;
+        margin: 40px;
+        padding-bottom: 200px;
+        width: 640px;        
+    }
+
+    #about, #social-media{
+        margin-top: 50px;
+        width: 80%;        
+    }
+    /* First, we get rid of the grid layout and make it a block */
+    .nav{
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 130px;
+    }
+    /* Then, we float everything to the left */
+    .nav > div {
+        float: left;
+        text-align: center;
+        margin: 3% 10%;
+    }
+
+    .nav span{
+        display: none;
+    }
+
+    .nav div:after {
+        content: "|";
+        padding: 0 .5em;
+    }
+    /* Then, we remove the float from the div with the logo */
+    #logo{
+        float: none;
+        margin-bottom: 2px;
+        margin: inherit;
+    }
+    #logo:after{
+        content: none;
+    }
+
+    #about  img {
+        float: unset;
+        padding-right: 20px;
+    }
+    
 }
