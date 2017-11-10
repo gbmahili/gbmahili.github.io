@@ -51,7 +51,7 @@ p {
   color: #424242;
 }
 
-.star {
+.gbmahili-picture {
   float: left;
   width: 250px;
   shape-outside: url(../assets/images/Baraka-In-Windsor-Canada-Flag.png);
@@ -177,4 +177,18 @@ figcaption{
     color: rgb(17, 212, 226);
     background-color: #F5F5F5;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .gbmahili-picture {
+        float: none;
+        width: 100%;
+    }
+
+    .navbar-brand{
+        padding: 15px;
+        font-size: 1.5em;
+    }
+    
 }
