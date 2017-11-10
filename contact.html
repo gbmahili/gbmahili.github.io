@@ -3,69 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Baraka Mahili - Contact</title>
 
-    <style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    </style>
-</head>
-<body>
-
-    <!-- Header -->
+    </head>
     
-    <div id="header">
-
-        <div class="nav">
-            <div id="logo"><h1><a href="index.html">Baraka Mahili</a></h1></div>
-            <div><a href="index.html">About</a> <span>|</span></div>
-            <div><a href="portfolio.html">Portfolio</a> <span>|</span></div>
-            <div class="active"><a href="contact.html">Contact</a></div>
-        </div>
-
-    </div>
-
-    <!-- Main Content -->
-
-    <div id="main-content">
+    <body>
+    
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        Baraka Mahili
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+    
+                        <li class="active">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+    
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    
+        <div class="container main-content">
 
         <div id="content-on-me">
+
+            <div class="col-md-8" id="about">
             
-            <div id="about">
-                <h1>Contact Me</h1> 
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+            
                 <hr>
-                  
-                <form>
-                    <div class="form">
-                        <div>
-                            <label for="name">Name</label><br>
+            
+                <div class="row contact-form">
+                    <div class="col-md-10 col-md-offset-1">
+
+                    <form>                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
                             <input type="text" class="form-control" id="name" placeholder="John Smith" required>
                         </div>
-                        <div>
-                            <label for="email">Emaill</label><br>
+                        <div class="form-group">
+                            <label for="email">Emaill</label>
                             <input type="email" class="form-control" id="email" placeholder="example@emai.com" required>
                         </div>
-                        <div>
-                            <label for="msg">Message</label><br>
-                            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+                        <div class="form-group">
+                            <label for="msg">Message</label>
+                            <textarea name="msg" class="form-control" id="msg" cols="30" rows="10" required></textarea>
                         </div>
-                        <div>
-                            <input type="button" value="Submit">
+                        <div class="form-group">
+                            <center><input type="button" value="Submit" class="btn btn-primary"></center>
                         </div>
-                    </div>
+                    </form>
 
-                </form>
-                
+                    </div>
+                    
+                </div>
+            
             </div>
 
-            <div id="social-media">
-                <h2>Connect with Me</h2>
+            <div class="col-md-3" id="social-media">
+            
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Connect with Me</h2>
+                    </div>
+                </div>
                 <hr>
-                <div id="social-media-icons">                        
-                    <div><a href="https://www.linkedin.com/in/baraka-mahili-13971564/" target="_blank"><img src="./assets/images/linkedin-icon.png" alt="Linkedin Icon"></a></div>
-                    <div><a href="https://github.com/gbmahili" target="_blank"><img src="./assets/images/github-icon.png" alt="GitHub Icon"></a></div>
-                    <div><a href="https://stackoverflow.com/users/5051309/baraka-mahili" target="_blank"><img src="./assets/images/StackOverflow-icon.png" alt="StackOverflow-icon"></a></div>
+            
+                <div class="row" id="social-media-icons">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="https://www.linkedin.com/in/baraka-mahili-13971564/" target="_blank">
+                            <img class="img-responsive" src="./assets/images/linkedin-icon.png" alt="Linkedin Icon">
+                        </a>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="https://github.com/gbmahili" target="_blank">
+                            <img class="img-responsive" src="./assets/images/github-icon.png" alt="GitHub Icon">
+                        </a>
+                    </div>
+            
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <a href="https://stackoverflow.com/users/5051309/baraka-mahili" target="_blank">
+                            <img class="img-responsive" src="./assets/images/StackOverflow-icon.png" alt="StackOverflow-icon">
+                        </a>
+                    </div>
+            
                 </div>
             </div>
 
@@ -78,6 +129,14 @@
     <div id="footer">
         Copyright 2017 &copy; Baraka Mahili
     </div>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
       
 </body>
 </html>

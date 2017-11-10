@@ -4,30 +4,72 @@ body {
     background-color: #cccccc;
 }
 
-.nav{
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+.main-content{
+    margin-top: 125px;
+}
+
+.navbar-default {
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    padding: 25px;
+    box-shadow: 0px 17px 10px -10px rgba(185, 179, 179, 0.4);
     color: black;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #9E9D99;
-    font-size: 1.1em;
+    font-size: 16px;
+    line-height: 26px;
 }
 
+.navbar-default .navbar-nav > li > a, .dropdown-menu > li > a {
+    padding: 20px;
+}
+.active, .navbar-default .navbar-nav > li > a:hover {
+    background: rgb(241, 237, 237);
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #F5F5F5;
+}
 
-#logo{
-    background: #4AAAA5;
-    padding: 1.5em;
-    font-size: 25px;
+#navbar{
+    background: #F5F5F5;    
+}
+
+.navbar-brand{
+    padding: 20px 30px;
+    font-size: 2em;
     font-weight: bold;
-    
+    color:rgb(17, 212, 226);
 }
-#logo a {
-    color: white;
+
+p {
+  line-height: 2; 
+  font-family: Helvetica;
+  text-align: justify;
+  margin: 0;
+  font-size: 16px;
+  color: #424242;
 }
-.nav a{
-    color: #9E9D99;
+
+.star {
+  float: left;
+  width: 250px;
+  shape-outside: url(../assets/images/Baraka-In-Windsor-Canada-Flag.png);
+  shape-margin:20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#about, #social-media{
+    font-size: 1.2em;
+    padding: 20px;
+    color: #919898;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin: 10px;
+}
+
+#about  a {
     text-decoration: none;
 }
 
@@ -35,96 +77,12 @@ body {
     color: rgb(17, 212, 226);
 }
 
-#header{
-    background: #FAFAFA;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.nav, #main-content{
-    margin: 0 auto;
-    width: 960px;
-}
-
-#main-content{    
-    margin-bottom: 50px; 
-}
-
-.nav div span{
-    color: #aaa;
-    margin-left: 20px;
-}
-
 #content-on-me{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 35px;
-    margin-top: 40px;
     padding-bottom: 200px;
 }
 
-#about{
-    background-color: #FFF; 
-    width: 610px;      
-}
-
-#about > a {
-    text-decoration: none;
-}
-
-#about > span a {
-    color: #4AAAA5;
-    text-decoration: none;
-}
-
-#about > img{
-    border-radius: 20px 0;
-}
-
-#social-media{
-    background-color: #FAFAFA; 
-    height: 200px;
-}
-
-#about, #social-media{
-    font-size: 1.2em;
-    line-height: 150%;
-    padding: 20px;
-    color: #919898;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-#social-media:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-#social-media-icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2px;
-    padding: 20px;
-}
-
-#social-media-icons img:hover{
-    opacity: 0.8;
-}
-
-#about > img {
-    float: left;
-    padding-right: 20px;
-}
-
-hr{
-    height: 3px;
-    background: #aaa;
-}
-
 #footer{
-    display: grid;
-    grid-auto-rows: minmax(50px, auto);
     background: #666666;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     position: fixed;
     bottom: 0;
@@ -132,6 +90,7 @@ hr{
     left: 0;
     color: white;
     border-top: 9px solid #4AAAA5;
+    text-align: center;
 }
 
 #go-to-portfolio{   
@@ -149,28 +108,43 @@ hr{
     box-shadow: 0 14px 28px rgba(19, 56, 54, 0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.active a{
-    color: rgb(17, 212, 226);
+#social-media:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-/* Potfolio CSS Code: My Work Section */
-
-#my-work{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    grid-auto-rows: minmax(300px, auto);
-    grid-gap: 2em;
+#social-media-icons img:hover{
+    opacity: 0.8;
+    border: 1px solid #4AAAA5;
+    border-radius: 50%;
 }
 
+.my-work > div{
+    margin-top: 15px;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+.form-control:focus{
+    border: 1px solid #4AAAA5;
+}
+
+.btn-primary{
+    padding: 10px 75px;
+    background: #4AAAA5;
+    border: 1px solid #4AAAA5;
+    border-radius: 0; 
+}
+
+figcaption{
+    padding: 10px;
+}
 .show{
     background: blue;
-    display: grid;
     height: 200px;
-    justify-content: center;
-    align-items: end;
     color: white;
-    background-color: #353535;
+    background-color: #979393;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: top left;
@@ -199,47 +173,8 @@ hr{
     background-image: url("../images/Detroit-View-FromCanada.jpg");
 }
 
-/* Contact Form CSS */
-input{
-    width: 100%;
-    border: 1px solid rgba(105, 104, 104, 0.25);
-    height: 2.4em;
-    padding: 5px;
-    margin-bottom: 20px;
-}
-
-textarea:focus, input:focus{   
-    outline: none;
-    border: 1px solid #4AAAA5;
-}
-textarea{
-    width: 100%;
-    padding: 5px;
-    border: 1px solid rgba(105, 104, 104, 0.25);
-    margin-bottom: 15px;
-}
-
-input[type=button]{
-    width: 150px;
-    background: #4AAAA5;
-    color: white;
-    border: 1px solid #4AAAA5;
-    font-size: 18px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-input[type=button]:hover{    
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    cursor: pointer;
-}
-
-h1{
-    font-size: 30px;
-}
-
-h1, h2{
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #4AAAA5;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: rgb(17, 212, 226);
+    background-color: #F5F5F5;
     font-weight: bold;
 }
